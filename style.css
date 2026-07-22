@@ -1,0 +1,109 @@
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+/* Skip Link */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    background:black;
+    color:white;
+    padding:10px;
+}
+
+.skip-link:focus{
+    left:20px;
+    top:20px;
+}
+
+/* Navigation (Flex) */
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    background:#333;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+/* Hover */
+
+nav a:hover{
+    background:orange;
+    color:black;
+}
+
+/* Grid */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding:30px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+/* Image Box Model */
+
+img{
+    width:250px;
+    border:4px solid #333;
+    padding:8px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+/* Hover Effect */
+
+img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px gray;
+}
+
+/* nth-child */
+
+.gallery img:nth-child(odd){
+    border-radius:50%;
+}
+
+.gallery img:nth-child(even){
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+    margin:20px;
+}
+
+p{
+    padding:10px;
+}
